@@ -27,7 +27,7 @@ You can check out the live demo [here](https://basic-login-form-validation-vishn
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/simple-login.git
+git clone https://github.com/VishnuThangaraj/Basic-LoginFormValidation.git
 ```
 
 ## Usage
