@@ -4,6 +4,16 @@
   font-family: poppins;
 }
 
+body {
+  overflow: hidden;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
 /* login Area  */
 
 #login_area {
@@ -75,4 +85,26 @@
 
 #description_body {
   font-size: 15px;
+}
+
+.btn:hover,
+.social:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.05);
+}
+
+/* PopUp Model */
+
+#myModal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #888;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }

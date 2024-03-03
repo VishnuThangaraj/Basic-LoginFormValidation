@@ -90,7 +90,7 @@
             <div id="success_msg" class="warning pb-4 text-success">
               <!-- All Good -->
             </div>
-            <div class="loginIn_btn d-flex justify-content-evenly">
+            <div class="loginIn_btn d-flex justify-content-evenly mb-4">
               <div class="btn my-3 px-5 py-2 btn-secondary">SIGN UP</div>
               <div
                 id="login_btn"
@@ -110,9 +110,40 @@
           Enjoy a hassle-free login experience tailored just for you.
         </div>
         <div class="explore">
-          <div id="explore_btn" class="btn btn-secondary mt-5 px-5 py-2">
+          <div
+            id="explore_btn"
+            class="btn btn-secondary mt-5 px-5 py-2"
+            onclick="exploreGit()"
+          >
             EXPLORE
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pop Up Modal -->
+    <div id="myModal" class="border rounded text-center px-4 py-4">
+      <p class="py-3">
+        Ready to proceed? Click 'Confirm' to log in to your account or 'Cancel'
+        to review your information.
+      </p>
+      <div
+        id="confirm_btn_holder"
+        class="d-flex flex-row justify-content-center"
+      >
+        <div
+          id="model_cancel"
+          class="btn btn-danger pop_up_btn me-5 px-3"
+          onclick="cancelLogin()"
+        >
+          CANCEL
+        </div>
+        <div
+          id="model_confirm"
+          class="btn btn-success pop_up_btn"
+          onclick="confirmLogin()"
+        >
+          CONFIRM
         </div>
       </div>
     </div>

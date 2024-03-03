@@ -11,6 +11,9 @@ const email_warning = document.getElementById(`email_warning`);
 const password_warning = document.getElementById(`password_warning`);
 const success_message = document.getElementById(`success_msg`);
 
+// PopUp Field
+const modal = document.getElementById(`myModal`);
+
 // Input Field Evenhandlers
 
 email_field.addEventListener("change", emailValidation);
@@ -56,16 +59,26 @@ function allGoodValidation() {
 
 // Login Button Function
 function validateLogin() {
-  if (!emailFail && !passwordFail) {
-    if (userConfirmation()) {
-      alert("Login Successful");
-    }
-  } else {
-    window.location.href = window.location.href;
+  if (emailFail || passwordFail) {
+    return;
   }
+  modal.style.display = "block";
 }
 
-// Additional confirmation dialogue box
-// function userConfirmation() {
-//   window.innerHTML = "<div>hello mr </div>";
-// }
+// Cancel Login Button Function
+function cancelLogin() {
+  modal.style.display = "none";
+}
+
+// Confirm login Button Function
+function confirmLogin() {
+  cancelLogin();
+  alert("Login Successful");
+
+  window.location.href = window.location.href;
+}
+
+// Explore Button function
+function exploreGit() {
+  window.location.href = "https://github.com/VishnuThangaraj";
+}
